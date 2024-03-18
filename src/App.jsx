@@ -1,12 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, lazy } from "react";
 import "./index.css";
-import Header from "./header/Header";
+// import Header from "./header/Header";
 import { Outlet } from "react-router-dom";
-import Footer from "./footer/Footer";
-import Newsletter from "./newsletter/Newsletter";
+// import Footer from "./footer/Footer";
+// import Newsletter from "./newsletter/Newsletter";
 import scrollreveal from "scrollreveal";
 
 import ScrollToTop from "./scrollToTop/ScrollToTop";
+
+const Header = lazy(() => import("./header/Header.jsx"))
+const Footer = lazy(() => import("./footer/Footer.jsx"))
+const Newsletter = lazy(() => import("./newsletter/Newsletter.jsx"))
+
+
+
 
 // get default theme or the theme saved in localstorage when found
 function defaultTheme() {
