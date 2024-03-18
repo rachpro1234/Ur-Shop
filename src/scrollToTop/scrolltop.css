@@ -1,0 +1,36 @@
+.scrolltop {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    z-index: 10;
+}
+
+
+.scrolltop a {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    transition: all .4s ease-in-out;
+    z-index: 1;
+}
+
+.scroll-inline {
+    opacity: 1;
+    visibility: visible;
+} 
+
+.scroll-none {
+    opacity: 0;
+    visibility: hidden;
+} 
+
+
+.scroll-icon {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+

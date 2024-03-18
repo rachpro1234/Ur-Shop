@@ -1,30 +1,85 @@
-/* eslint-disable no-unused-vars */
-import React from 'react'
-import './index.css'
-import Header from './subpages/Header'
-import Home from './subpages/Home'
-import Shop from './subpages/Shop'
-import Blog from './subpages/Blog'
-import About from './subpages/About'
-import Contact from './subpages/Contact'
-import Cart from './subpages/Cart'
+import React, { useState, useEffect, useRef } from "react";
+import "./index.css";
+import Header from "./header/Header";
+import { Outlet } from "react-router-dom";
+import Footer from "./footer/Footer";
+import Newsletter from "./newsletter/Newsletter";
+import scrollreveal from "scrollreveal";
 
+import ScrollToTop from "./scrollToTop/ScrollToTop";
+
+// get default theme or the theme saved in localstorage when found
+function defaultTheme() {
+  const savedTheme = localStorage.getItem("theme");
+  return savedTheme ? savedTheme : "light";
+}
 function App() {
+  const [theme, setTheme] = useState(defaultTheme());
 
+  // dark / light mode toggle
+  const changeTheme = () => {
+    theme === "dark" ? setTheme("light") : setTheme("dark");
+  };
+
+  // saving the theme mode into the localstorage
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  // to apply the sliding animations when the page is loaded
+  useEffect(() => {
+    const animations = () => {
+      const sr = scrollreveal({
+        origin: "top",
+        distance: "80px",
+        duration: "2000",
+        delay: "1",
+        reset: false,
+      });
+      sr.reveal(
+        `
+        .header,
+        .home-elements,
+        .shop-container,
+        .blog-banner,
+        .blog-content,
+        .about-banner,
+        .about-us,
+        .our-app,
+        .contact-banner,
+        .contact-info,
+        .contact-field,
+        .signup-container,
+        .signin-container,
+        .features,
+        .products,
+        .banner,
+        .second-banner,
+        .third-banner,
+        .newsletter,
+        .footer
+        `,
+        {
+          interval: 1000,
+        }
+      );
+    };
+
+    animations();
+  }, []);
 
 
 
   return (
-    <>
-      <Header />
-      <Home />
-      <Shop />
-      <Blog />
-      <About />
-      <Contact />
-      <Cart />
-    </>
-  )
+    <div data-theme={theme} className="app">
+      <ScrollToTop />
+      <Header changeTheme={changeTheme} currentTheme={theme} />
+      <Outlet />
+      <Newsletter />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
