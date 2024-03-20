@@ -80,8 +80,10 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <CartProvider>
-    <Suspense fallback={<h2 style={{textAlign: "center"}}>Loading...</h2>}>
       <RouterProvider router={router} />
-    </Suspense>
   </CartProvider>
 );
+
+
+
+
