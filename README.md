@@ -8,8 +8,6 @@
 ==> Packages used in this project are ;
 
 - React-Router-dom (npm install react-router-dom@6) for switching the pages in the navbar
-- Swiper package (npm i swiper)
-- Popper package (npm i @popperjs/core)
 - react-use-cart (npm i react-use-cart) for building a shopping cart
 
 
