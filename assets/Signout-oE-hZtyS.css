@@ -1,0 +1,1 @@
+.sign-btns{display:flex;justify-content:center;align-items:center;gap:1.25rem}.sign-btns .login{text-align:center}@media screen and (max-width: 477px){.sign-btns{display:flex;align-items:flex-start;flex-direction:column}}
