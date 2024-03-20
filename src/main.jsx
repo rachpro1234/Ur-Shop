@@ -1,4 +1,4 @@
-import React, {lazy} from "react";
+import React, { lazy } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import Home from "./home/Home.jsx";
@@ -16,6 +16,7 @@ import { CartProvider } from "react-use-cart";
 import Signout from "./signout/Signout.jsx";
 
 // dynamic import using lazy method from react
+// const Home = lazy(() => import("./home/Home.jsx"))
 // const Header = lazy(() => import("./header/Header.jsx"))
 // const Blog = lazy(() => import("./blog/Blog.jsx"))
 // const Cart = lazy(() => import("./cart/Cart.jsx"))
@@ -25,7 +26,6 @@ import Signout from "./signout/Signout.jsx";
 // const Signup = lazy(() => import("./signup/Signup.jsx"))
 // const Login = lazy(() => import("./login/Login.jsx"))
 // const Signout = lazy(() => import("./signout/Signout.jsx"))
-
 
 const router = createBrowserRouter([
   {
@@ -71,12 +71,10 @@ const router = createBrowserRouter([
       {
         path: "/signout",
         element: <Signout />,
-      }
+      },
     ],
   },
 ]);
-
-
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <CartProvider>

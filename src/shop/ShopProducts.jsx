@@ -1,6 +1,6 @@
-import React from 'react'
-import data from '../data/data'
-import ShopCard from './ShopCard'
+import React from "react";
+import data from "../data/data";
+import ShopCard from "./ShopCard";
 
 const ShopProducts = () => {
   return (
@@ -12,12 +12,19 @@ const ShopProducts = () => {
       <div className="products-card">
         {data.shopProducts.map((item, index) => {
           return (
-            <ShopCard  title={item.title} img={item.img} store={item.store} price={item.price} item={item} key={index} />
-          )
+            <ShopCard
+              title={item.title}
+              img={item.img}
+              store={item.store}
+              price={item.price}
+              item={item}
+              key={index}
+            />
+          );
         })}
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default ShopProducts;

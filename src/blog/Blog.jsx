@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 
 
-function Blog() {
+const Blog = () => {
   return (
     <div className="blog">
       <div className="blog-banner">

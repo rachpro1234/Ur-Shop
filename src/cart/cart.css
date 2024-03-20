@@ -1,6 +1,6 @@
 .cart-container {
   border-collapse: collapse;
-  /* height: calc(100vh - 70px); */
+  padding-top: 2rem;
 }
 .cart-container .items {
   padding: 2.5rem;

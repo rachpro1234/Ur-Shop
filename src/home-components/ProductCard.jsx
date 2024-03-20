@@ -1,13 +1,12 @@
 import React from "react";
-import {useCart} from 'react-use-cart'
-import { NavLink } from 'react-router-dom';
+import { useCart } from "react-use-cart";
+import { NavLink } from "react-router-dom";
 import Star from "../star/Star";
 import { FaShoppingBag } from "react-icons/fa";
 
-
 const ProductCard = (props) => {
-    // console.log(props)
-    const { addItem } = useCart();
+  // console.log(props)
+  const { addItem } = useCart();
   return (
     <div className="card">
       <img src={props.img} alt="" />
@@ -18,7 +17,7 @@ const ProductCard = (props) => {
         <span className="price">{props.price}$</span>
       </div>
       <NavLink to="/cart" className="cart" onClick={() => addItem(props.item)}>
-                <FaShoppingBag />
+        <FaShoppingBag />
       </NavLink>
     </div>
   );

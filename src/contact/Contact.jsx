@@ -20,7 +20,7 @@ const Location = {
   lng: 14.059511,
 };
 
-function Contact() {
+const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-banner">

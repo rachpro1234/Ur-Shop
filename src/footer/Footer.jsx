@@ -16,7 +16,7 @@ const Footer = () => {
 
    // get the current year to be used in the footer
 const currentYear = new Date().getFullYear();
-
+ 
 const currentMonth = new Date().toLocaleString([], 
     {month: "long"});
 
@@ -27,7 +27,6 @@ const currentMonth = new Date().toLocaleString([],
             <div className="colums">
                 <div className="col">
                     <img src={logo} alt="logo"  className='logo'/>
-                    {/* <h1 id='logo' className="logo">Ur-Shop</h1> */}
                     <h4>contact</h4>
                     <p><span><strong>address: </strong></span>furstenwalde, germany</p>
                     <p><span><strong>phone: </strong></span>+49832728372</p>

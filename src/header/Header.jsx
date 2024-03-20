@@ -17,8 +17,7 @@ import { MdOutlineWbSunny } from "react-icons/md";
 import { BsFillMoonFill } from "react-icons/bs";
 import Signout from "../signout/Signout";
 
-
-function Header({ changeTheme, currentTheme }) {
+const Header = ({ changeTheme, currentTheme }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   // triggering the y scroll
   const { scrollY } = useScroll();
@@ -26,8 +25,6 @@ function Header({ changeTheme, currentTheme }) {
   const sideNavRef = useRef(null);
   // total products items
   const { totalItems } = useCart();
-
-
 
   // closing the sidebar on clicking outside of it
   useEffect(() => {
@@ -123,11 +120,6 @@ function Header({ changeTheme, currentTheme }) {
           <li id="close">
             <IoMdClose onClick={() => setIsNavOpen(!isNavOpen)} />
           </li>
-          {/* <select className="translation">
-            <option value="en">EN</option>
-            <option value="de">DE</option>
-            <option value="es">ES</option>
-          </select> */}
           <div className="signing">
             <Signout />
             <div className="mode" onClick={changeTheme}>

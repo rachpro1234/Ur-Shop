@@ -2,7 +2,7 @@ import React from 'react'
 import "./newsletter.css"
 
 
-export const Newsletter = () => {
+const Newsletter = () => {
   return (
     <section id="newsletter" className="newsletter">
             <div className="newsletter-info">

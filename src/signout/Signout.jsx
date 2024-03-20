@@ -8,16 +8,6 @@ const Signout = () => {
   const [authenticatedUser, setAuthenticatedUser] = useState("");
   const navigate = useNavigate();
 
-//   useEffect(() => {
-//     onAuthStateChanged(auth, (user) => {
-//       if (user) {
-//         setAuthenticatedUser(user);
-//       } else {
-//         // signed out
-//         setAuthenticatedUser(null)
-//       }
-//     });
-//   }, []);
 
 useEffect(() => {
     onAuthStateChanged(auth, (user) => {

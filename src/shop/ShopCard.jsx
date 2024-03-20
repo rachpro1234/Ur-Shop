@@ -1,16 +1,11 @@
-import React from 'react'
-import { useCart } from 'react-use-cart';
-import { NavLink } from 'react-router-dom';
-import Star from '../star/Star';
+import React from "react";
+import { useCart } from "react-use-cart";
+import { NavLink } from "react-router-dom";
+import Star from "../star/Star";
 import { FaShoppingBag } from "react-icons/fa";
 
-
-
-
 const ShopCard = (props) => {
-
   const { addItem } = useCart();
-
 
   return (
     <div className="card">
@@ -22,10 +17,10 @@ const ShopCard = (props) => {
         <span className="price">${props.price}</span>
       </div>
       <NavLink to="/cart" className="cart" onClick={() => addItem(props.item)}>
-                <FaShoppingBag />
+        <FaShoppingBag />
       </NavLink>
     </div>
-  )
-}
+  );
+};
 
 export default ShopCard;

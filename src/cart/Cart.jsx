@@ -2,7 +2,7 @@ import React from "react";
 import { useCart } from "react-use-cart";
 import "./cart.css";
 
-function Cart() {
+const Cart = () => {
   const {
     isEmpty,
     totalUniqueItems,

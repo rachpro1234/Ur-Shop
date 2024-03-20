@@ -22,25 +22,7 @@ const Signup = () => {
   // to navigate the signed in users authomatically to the home page
   const navigate = useNavigate();
 
-  // connect users signup to firebase
-  // const submit = async (e) => {
-  //   e.preventDefault()
-  //    await createUserWithEmailAndPassword(auth, signUpFormData.email, signUpFormData.password)
-  //     .then((userCredential) => {
-  //        const user = userCredential.user;
-  //        navigate("/login")
-  //        console.log(user)
-  //        alert("successfully created account")
-  //     }) 
-  //   .catch ((error) => {
-  //     const errorCode = error.code;
-  //     const errorMessage = error.message
-  //     console.log(errorCode, errorMessage)
-  //     alert(errorMessage)
-  //   })
-  // }
-
-
+  
   const handleChange = (event) => {
     const { name, value, type, checked } = event.target;
     setsignUpFormData((prevFormData) => {
@@ -85,7 +67,7 @@ const Signup = () => {
     .catch ((error) => {
       const errorCode = error.code;
       const errorMessage = error.message
-      console.log(errorCode, errorMessage)
+      // console.log(errorCode, errorMessage)
       alert(errorMessage)
     })
   };
@@ -147,7 +129,6 @@ const Signup = () => {
         </label>
         <div className="terms">
           <input
-            // onClick={() => setsignUpFormData(!signUpFormData.isClicked)}
             onChange={handleChange}
             id={signUpId + "-isclicked"}
             type="checkbox"
