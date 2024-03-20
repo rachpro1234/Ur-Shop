@@ -1,4 +1,4 @@
-import React, { useState, useEffect, lazy, Suspense } from "react";
+import React, { useState, useEffect, lazy } from "react";
 import "./index.css";
 // import Header from "./header/Header";
 import { Outlet } from "react-router-dom";
@@ -11,7 +11,6 @@ import ScrollToTop from "./scrollToTop/ScrollToTop";
 const Header = lazy(() => import("./header/Header"));
 const Footer = lazy(() => import("./footer/Footer"));
 const Newsletter = lazy(() => import("./newsletter/Newsletter"));
-
 
 // get default theme or the theme saved in localstorage when found
 function defaultTheme() {
@@ -73,15 +72,11 @@ function App() {
     animations();
   }, []);
 
-
-
   return (
     <div data-theme={theme} className="app">
       <ScrollToTop />
       <Header changeTheme={changeTheme} currentTheme={theme} />
-      <Suspense fallback={<h2>Loading...</h2>}>
-        <Outlet />
-      </Suspense>
+      <Outlet />
       <Newsletter />
       <Footer />
     </div>
@@ -89,4 +84,3 @@ function App() {
 }
 
 export default App;
-
