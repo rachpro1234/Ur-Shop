@@ -4,9 +4,24 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2.5rem 6.25rem;
     margin: 1.875rem 0;
-    background: url(../src/img/banner/b1.jpg) center / cover no-repeat;
+    position: relative;
+    width: 100%;
+}
+
+.newsletter img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.newsletter .newsletter-content {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 3rem;
 }
 
 .newsletter .newsletter-info {
@@ -72,7 +87,7 @@
 
 @media screen and (max-width: 1280px) {
     .newsletter {
-        padding: 2.5rem 2.813rem;
+        padding: 0;
     }
 
     .form {
@@ -81,12 +96,12 @@
 }
 
 @media screen and (max-width: 477px) {
-    .newsletter {
-        padding: 1.25rem 0.875rem ;
-    }
-
     .newsletter .newsletter-info h3 {
         font-size: 1.25rem;
+    }
+
+    .newsletter .newsletter-content {
+        padding: 0 1rem;
     }
 
     .newsletter .newsletter-info p {
@@ -99,10 +114,6 @@
 }
 
 @media screen and (max-width: 799px) {
-    .newsletter {
-        padding: 1.25rem 0.875rem;
-    }
-
     .newsletter .form {
         width: 100%;
     }

@@ -599,7 +599,7 @@ button.white {
 /*========== MEDIA-QUERIES(MOBILE)===========*/
 @media screen and (max-width: 477px) {
   #home {
-    height: 90vh; /* we can also calculate it by substracting the Navbar height from the home height calc(100vh - 20vh)*/
+    height: 100vh; /* we can also calculate it by substracting the Navbar height from the home height calc(100vh - 20vh)*/
   }
 
   .home-content > .home-elements {
