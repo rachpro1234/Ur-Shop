@@ -12,3 +12,6 @@ tasks to accomplish :
 - write the project README.file
 - search how to enhace the website performance
 - dark/light mode switch
+
+https://rachpro1234.github.io/Ur-Shop/ // old url
+https://github.com/rachpro1234/Ur-Shop // new url
