@@ -7,6 +7,7 @@ import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 
 import { useNavigate } from "react-router-dom";
+import signinCover from "../img/others/signin-cover.jpg";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
 
@@ -72,6 +73,7 @@ const Login = () => {
 
   return (
     <div className="signin-container">
+      <img src={signinCover} alt="" />
       <form className="signin-form" onSubmit={formSignInSubmit}>
         <div className="form-title">
           <h1>sign-in</h1>

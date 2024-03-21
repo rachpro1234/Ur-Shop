@@ -7,6 +7,7 @@ import "./signup.css";
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import signupCover from "../img/others/signup-cover.jpg";
 import {createUserWithEmailAndPassword} from 'firebase/auth'
 import {auth} from "../firebase";
 
@@ -75,6 +76,7 @@ const Signup = () => {
   // if the terms box isn't checked don't validate the form
   return (
     <div className="signup-container">
+      <img src={signupCover} alt="" />
       <form className="signup-form" onSubmit={formSignUpSubmit}>
         <div className="form-title">
           <h1>sign-up</h1>
