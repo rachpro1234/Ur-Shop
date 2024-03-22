@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
-// import Header from "./header/Header";
+import Header from "./header/Header";
 import { Outlet } from "react-router-dom";
-// import Footer from "./footer/Footer";
-// import Newsletter from "./newsletter/Newsletter";
+import Footer from "./footer/Footer";
+import Newsletter from "./newsletter/Newsletter";
 import scrollreveal from "scrollreveal";
 
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
-const LazyHeader = React.lazy(() => import("./components/header/Header"));
-const LazyNewsletter = React.lazy(() => import("./components/newsletter/Newsletter"));
-const LazyFooter = React.lazy(() => import("./components/footer/Footer"));
+// const LazyHeader = React.lazy(() => import("./components/header/Header"));
+// const LazyNewsletter = React.lazy(() => import("./components/newsletter/Newsletter"));
+// const LazyFooter = React.lazy(() => import("./components/footer/Footer"));
 
 // get default theme or the theme saved in localstorage when found
 function defaultTheme() {
@@ -75,10 +75,10 @@ function App() {
   return (
     <div data-theme={theme} className="app">
       <ScrollToTop />
-      <LazyHeader changeTheme={changeTheme} currentTheme={theme} />
+      <Header changeTheme={changeTheme} currentTheme={theme} />
       <Outlet />
-      <LazyNewsletter />
-      <LazyFooter />
+      <Newsletter />
+      <Footer />
     </div>
   );
 }
