@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
-import Header from "./header/Header";
+import Header from "./components/header/Header";
 import { Outlet } from "react-router-dom";
-import Footer from "./footer/Footer";
-import Newsletter from "./newsletter/Newsletter";
+import Footer from "./components/footer/Footer";
+import Newsletter from "./components/newsletter/Newsletter";
 import scrollreveal from "scrollreveal";
 
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
