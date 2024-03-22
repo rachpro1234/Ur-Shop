@@ -10,7 +10,7 @@ const Signout = () => {
 
 
 useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    onAuthStateChanged(auth, async (user) => {
         if(user) {
             setAuthenticatedUser(user)
         } else {
