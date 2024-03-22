@@ -8,9 +8,6 @@ import scrollreveal from "scrollreveal";
 
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
-// const LazyHeader = React.lazy(() => import("./components/header/Header"));
-// const LazyNewsletter = React.lazy(() => import("./components/newsletter/Newsletter"));
-// const LazyFooter = React.lazy(() => import("./components/footer/Footer"));
 
 // get default theme or the theme saved in localstorage when found
 function defaultTheme() {

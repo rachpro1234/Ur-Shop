@@ -68,16 +68,13 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: import.meta.env.BASE_URL }
-  // basename={process.env.PUBLIC_URL}
+  { basename: "/home" }
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <CartProvider>
-    <React.Suspense fallback="Loading...">
       <ErrorBoundary fallback={<p>something went wrong. Try again later </p>}>
         <RouterProvider router={router} />
       </ErrorBoundary>
-    </React.Suspense>
   </CartProvider>
 );
