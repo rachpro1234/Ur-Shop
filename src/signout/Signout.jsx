@@ -1,34 +1,32 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "../firebase";
-import './signout.css'
+import { auth } from "../firebase/firebase";
+import "./signout.css";
 
 const Signout = () => {
   const [authenticatedUser, setAuthenticatedUser] = useState("");
   const navigate = useNavigate();
 
-
-useEffect(() => {
+  useEffect(() => {
     onAuthStateChanged(auth, async (user) => {
-        if(user) {
-            setAuthenticatedUser(user)
-        } else {
-            // signed out
-            setAuthenticatedUser(null)
-        }
-    })
-}, [])
-
+      if (user) {
+        setAuthenticatedUser(user);
+      } else {
+        // signed out
+        setAuthenticatedUser(null);
+      }
+    });
+  }, []);
 
   const userSignout = () => {
     signOut(auth)
       .then(() => {
-        navigate("/signup")
+        navigate("/signup");
         // alert("user signed out")
       })
       .catch((error) => {
-        alert(error)
+        alert(error);
       });
   };
 

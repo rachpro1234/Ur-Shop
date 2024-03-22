@@ -8,8 +8,8 @@ import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import signupCover from "../img/others/signup-cover.jpg";
-import {createUserWithEmailAndPassword} from 'firebase/auth'
-import {auth} from "../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase/firebase";
 
 const Signup = () => {
   const [signUpFormData, setsignUpFormData] = useState({
@@ -23,7 +23,6 @@ const Signup = () => {
   // to navigate the signed in users authomatically to the home page
   const navigate = useNavigate();
 
-  
   const handleChange = (event) => {
     const { name, value, type, checked } = event.target;
     setsignUpFormData((prevFormData) => {
@@ -34,22 +33,22 @@ const Signup = () => {
     });
   };
 
-  const [type, setType] = useState('password');
-  const [icon, setIcon] = useState(IoEyeOff)
+  const [type, setType] = useState("password");
+  const [icon, setIcon] = useState(IoEyeOff);
   const [isVisible, setIsVisible] = useState(false);
 
   // toggle the password visibility when clicking on the eye icon
   const togglePasswordVisibility = () => {
     if (!isVisible) {
-      setIsVisible(true)
-      setType('text')
-      setIcon(IoEye)
+      setIsVisible(true);
+      setType("text");
+      setIcon(IoEye);
     } else {
-      setIsVisible(false)
-      setType('password')
-      setIcon(IoEyeOff)
+      setIsVisible(false);
+      setType("password");
+      setIcon(IoEyeOff);
     }
-  }
+  };
 
   // to give specific id to every input field
   const signUpId = useId();
@@ -58,19 +57,23 @@ const Signup = () => {
   const formSignUpSubmit = (e) => {
     e.preventDefault();
     // console.log(signUpFormData);
-     createUserWithEmailAndPassword(auth, signUpFormData.email, signUpFormData.password)
+    createUserWithEmailAndPassword(
+      auth,
+      signUpFormData.email,
+      signUpFormData.password
+    )
       .then((userCredential) => {
-         const user = userCredential.user;
-         navigate("/login")
-         console.log(user)
-         alert("successfully created account")
-      }) 
-    .catch ((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message
-      // console.log(errorCode, errorMessage)
-      alert(errorMessage)
-    })
+        const user = userCredential.user;
+        navigate("/login");
+        console.log(user);
+        alert("successfully created account");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // console.log(errorCode, errorMessage)
+        alert(errorMessage);
+      });
   };
 
   // if the terms box isn't checked don't validate the form
@@ -122,10 +125,7 @@ const Signup = () => {
               required
             />
           </div>
-          <p 
-          className="show-password"
-          onClick={togglePasswordVisibility}
-          >
+          <p className="show-password" onClick={togglePasswordVisibility}>
             {icon}
           </p>
         </label>

@@ -9,7 +9,7 @@ import { IoEyeOff } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import signinCover from "../img/others/signin-cover.jpg";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth } from "../firebase/firebase";
 
 const Login = () => {
   const [signInFormData, setSignInFormData] = useState({
@@ -20,7 +20,6 @@ const Login = () => {
 
   // to navigate the signed in users authomatically to the home page
   const navigate = useNavigate();
-
 
   // tracking the changes in every input
   const handleChange = (e) => {
@@ -119,9 +118,7 @@ const Login = () => {
           />
           <label htmlFor="isClicked">remember me!</label>
         </div>
-        <button className="submit-btn">
-          login
-        </button>
+        <button className="submit-btn">login</button>
         <div className="signup-link">
           <p>still have no account ?</p>
           <Link to="/signup" className="signup">
