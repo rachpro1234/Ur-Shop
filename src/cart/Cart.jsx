@@ -26,7 +26,7 @@ const Cart = () => {
               {items.map((item, index) => {
                 return (
                   <tr key={index}>
-                    <div className="product-img">
+                    {/* <div className="product-img"> */}
                       <td>
                         <img
                           src={item.img}
@@ -34,7 +34,7 @@ const Cart = () => {
                           style={{ height: "7rem", borderRadius: "10PX" }}
                         />
                       </td>
-                    </div>
+                    {/* </div> */}
                     <td>{item.title}</td>
                     <td>{item.price}$</td>
                     <td>quantity: ({item.quantity})</td>
