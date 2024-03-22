@@ -6,9 +6,11 @@ import "./scrolltop.css";
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
 
-  window.addEventListener('scroll', () => {
-    window.scrollY > 100 ? setVisible(true) : setVisible(false)
-  })
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 100 ? setVisible(true) : setVisible(false)
+    })
+  }, [])
 
 
   // extract pathname property(key) from an object

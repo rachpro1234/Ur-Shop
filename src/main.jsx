@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
+import { ErrorBoundary } from "react-error-boundary";
 import Home from "./home/Home.jsx"
 // import Header from "./header/Header.jsx"
 // import Blog from "./blog/Blog.jsx"
@@ -93,7 +94,9 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById("root")).render(
   <CartProvider>
     <React.Suspense fallback="Loading...">
-      <RouterProvider router={router} />
+      <ErrorBoundary fallback={<p>something went wrong. Try again later </p>}>
+        <RouterProvider router={router} />
+      </ErrorBoundary>
     </React.Suspense>
   </CartProvider>
 );
