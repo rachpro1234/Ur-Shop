@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import img from "../img/about/a6.jpg";
+import img from "../../img/about/a6.jpg";
 import VideoComponent from "./VideoComponent";
 import { motion } from "framer-motion";
 

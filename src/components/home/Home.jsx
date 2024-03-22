@@ -17,6 +17,6 @@ const Home = () => {
       <ThrBanner />
     </main>
   );
-}
+};
 
 export default Home;

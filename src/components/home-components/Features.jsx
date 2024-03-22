@@ -1,11 +1,11 @@
 import React from 'react'
 // FEATURES IMAGES
-import  Shipping  from '../img/features/f1.png'
-import Order from '../img/features/f2.png'
-import Money from '../img/features/f3.png'
-import Promotion from '../img/features/f4.png'
-import Sell from '../img/features/f5.png'
-import Support from '../img/features/f6.png'
+import  Shipping  from '../../img/features/f1.png'
+import Order from '../../img/features/f2.png'
+import Money from '../../img/features/f3.png'
+import Promotion from '../../img/features/f4.png'
+import Sell from '../../img/features/f5.png'
+import Support from '../../img/features/f6.png'
 
 const Features = () => {
   return (

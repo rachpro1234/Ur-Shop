@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 // FOOTER IMAGES
-import AppStore from '../img/pay/app.jpg'
-import PlayStore from '../img/pay/play.jpg'
-import Pay from '../img/pay/pay.png'
+import AppStore from '../../img/pay/app.jpg'
+import PlayStore from '../../img/pay/play.jpg'
+import Pay from '../../img/pay/pay.png'
 import { FaFacebookF } from "react-icons/fa"; // facebook icon
 import { FaInstagram } from "react-icons/fa"; // instagram icon
 import { FaLinkedinIn } from "react-icons/fa"; // linkedin icon
 import { FaXTwitter } from "react-icons/fa6"; // twitter icon
 import "./footer.css"
-import logo from '../img/others/shop-l.png'
+import logo from '../../img/others/shop-l.png'
 
 
 const Footer = () => {

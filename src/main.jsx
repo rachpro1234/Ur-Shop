@@ -2,40 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { ErrorBoundary } from "react-error-boundary";
-import Home from "./home/Home.jsx"
-// import Header from "./header/Header.jsx"
-// import Blog from "./blog/Blog.jsx"
-// import Cart from "./cart/Cart.jsx"
-// import About from "./about/About.jsx"
-// import Contact from "./contact/Contact.jsx"
-// import Shop from "./shop/Shop.jsx"
-// import Signup from "./signup/Signup.jsx"
-// import Login from "./login/Login.jsx"
-// import Signout from "./signout/Signout.jsx"
+import Home from "./components/home/Home.jsx";
+import Header from "./components/header/Header.jsx"
+import Blog from "./components/blog/Blog.jsx"
+import Cart from "./components/cart/Cart.jsx"
+import About from "./components/about/About.jsx"
+import Contact from "./components/contact/Contact.jsx"
+import Shop from "./components/shop/Shop.jsx"
+import Signup from "./components/signup/Signup.jsx"
+import Login from "./components/login/Login.jsx"
+import Signout from "./components/signout/Signout.jsx"
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { CartProvider } from "react-use-cart";
 
-
-
 // code splitting
-const LazyHeader = React.lazy(() => import("./header/Header.jsx"))
-const LazyBlog= React.lazy(() => import("./blog/Blog.jsx"))
-const LazyCart = React.lazy(() => import("./cart/Cart.jsx"))
-const LazyAbout = React.lazy(() => import("./about/About.jsx"))
-const LazyContact = React.lazy(() => import("./contact/Contact.jsx")) 
-const LazyShop = React.lazy(() => import("./shop/Shop.jsx")) 
-const LazySignup = React.lazy(() => import("./signup/Signup.jsx")) 
-const LazyLogin = React.lazy(() => import("./login/Login.jsx")) 
-const LazySignout = React.lazy(() => import("./signout/Signout.jsx")) 
-
-
-
-
-
-
-
-
 
 
 const router = createBrowserRouter(
@@ -50,44 +31,44 @@ const router = createBrowserRouter(
         },
         {
           path: "/header",
-          element: <LazyHeader />,
+          element: <Header />,
         },
         {
           path: "/blog",
-          element: <LazyBlog />,
+          element: <Blog />,
         },
         {
           path: "/cart",
-          element: <LazyCart />,
+          element: <Cart />,
         },
         {
           path: "/contact",
-          element: <LazyContact />,
+          element: <Contact />,
         },
         {
           path: "/shop",
-          element: <LazyShop />,
+          element: <Shop />,
         },
         {
           path: "/about",
-          element: <LazyAbout />,
+          element: <About />,
         },
         {
           path: "/signup",
-          element: <LazySignup />,
+          element: <Signup />,
         },
         {
           path: "/login",
-          element: <LazyLogin />,
+          element: <Login />,
         },
         {
           path: "/signout",
-          element: <LazySignout />,
+          element: <Signout />,
         },
       ],
     },
   ],
-  // { basename: import.meta.env.BASE_URL }
+  { basename: import.meta.env.BASE_URL }
   // basename={process.env.PUBLIC_URL}
 );
 
@@ -100,7 +81,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </React.Suspense>
   </CartProvider>
 );
-
-
-
-

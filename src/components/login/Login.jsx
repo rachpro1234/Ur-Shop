@@ -7,9 +7,9 @@ import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 
 import { useNavigate } from "react-router-dom";
-import signinCover from "../img/others/signin-cover.jpg";
+import signinCover from "../../img/others/signin-cover.jpg";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase/firebase";
+import { auth } from "../../firebase/firebase";
 
 const Login = () => {
   const [signInFormData, setSignInFormData] = useState({

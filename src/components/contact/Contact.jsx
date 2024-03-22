@@ -10,9 +10,9 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaClock } from "react-icons/fa";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
 // IMAGES
-import person1 from "../img/people/1.png";
-import person2 from "../img/people/2.png";
-import person3 from "../img/people/3.png";
+import person1 from "../../img/people/1.png";
+import person2 from "../../img/people/2.png";
+import person3 from "../../img/people/3.png";
 
 const Location = {
   address: "Konstantin - Furstenwalde/Spree",

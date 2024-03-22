@@ -6,13 +6,11 @@ import { Outlet } from "react-router-dom";
 // import Newsletter from "./newsletter/Newsletter";
 import scrollreveal from "scrollreveal";
 
-import ScrollToTop from "./scrollToTop/ScrollToTop";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
-
-const LazyHeader = React.lazy(() => import("./header/Header"))
-const LazyNewsletter = React.lazy(() => import("./newsletter/Newsletter"))
-const LazyFooter = React.lazy(() => import("./footer/Footer"))
-
+const LazyHeader = React.lazy(() => import("./components/header/Header"));
+const LazyNewsletter = React.lazy(() => import("./components/newsletter/Newsletter"));
+const LazyFooter = React.lazy(() => import("./components/footer/Footer"));
 
 // get default theme or the theme saved in localstorage when found
 function defaultTheme() {

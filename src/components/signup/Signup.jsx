@@ -7,9 +7,9 @@ import "./signup.css";
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
-import signupCover from "../img/others/signup-cover.jpg";
+import signupCover from "../../img/others/signup-cover.jpg";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase/firebase";
+import { auth } from "../../firebase/firebase";
 
 const Signup = () => {
   const [signUpFormData, setsignUpFormData] = useState({

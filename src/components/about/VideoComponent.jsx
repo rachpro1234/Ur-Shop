@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import ReactPlayer from "react-player";
-import appVideo from "../img/about/1.mp4";
+import appVideo from "../../img/about/1.mp4";
 
 const VideoComponent = () => {
   const playerRef = useRef(null);
