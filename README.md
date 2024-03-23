@@ -21,5 +21,3 @@
 ==> For the animations I have used the React Framer Motion library.
 
  - I have used Firebase to handle user authentication and data security in both signup and signin forms, in the link below you will find a freecodecamp docu that would walk you through on how to connect your react app with Firebase (https://www.freecodecamp.org/news/use-firebase-authentication-in-a-react-app/)
-
- //"build": "vite build", (package.json)
