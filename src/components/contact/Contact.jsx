@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.css";
-// import GoogleMap from "./GoogleMap";
+import GoogleMap from "./GoogleMap";
 import ContactForm from "./ContactForm";
 import { motion } from "framer-motion";
 // ICONS
@@ -66,9 +66,9 @@ const Contact = () => {
             </ul>
           </div>
         </div>
-        {/* <div className="our-location">
+        <div className="our-location">
           <GoogleMap location={Location} zoomLevel={11} />
-        </div> */}
+        </div>
       </div>
 
       <div className="contact-field">

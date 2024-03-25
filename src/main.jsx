@@ -1,23 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import { ErrorBoundary } from "react-error-boundary";
 import Home from "./components/home/Home.jsx";
-import Header from "./components/header/Header.jsx"
-import Blog from "./components/blog/Blog.jsx"
-import Cart from "./components/cart/Cart.jsx"
-import About from "./components/about/About.jsx"
-import Contact from "./components/contact/Contact.jsx"
-import Shop from "./components/shop/Shop.jsx"
-import Signup from "./components/signup/Signup.jsx"
-import Login from "./components/login/Login.jsx"
-import Signout from "./components/signout/Signout.jsx"
+import Header from "./components/header/Header.jsx";
+import Blog from "./components/blog/Blog.jsx";
+import Cart from "./components/cart/Cart.jsx";
+import About from "./components/about/About.jsx";
+import Contact from "./components/contact/Contact.jsx";
+import Shop from "./components/shop/Shop.jsx";
+import Signup from "./components/signup/Signup.jsx";
+import Login from "./components/login/Login.jsx";
+import Signout from "./components/signout/Signout.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { CartProvider } from "react-use-cart";
 
 // code splitting
-
 
 const router = createBrowserRouter(
   [
@@ -72,8 +70,6 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <CartProvider>
-      <ErrorBoundary fallback={<p>something went wrong. Try again later </p>}>
-        <RouterProvider router={router} />
-      </ErrorBoundary>
+      <RouterProvider router={router} />
   </CartProvider>
 );

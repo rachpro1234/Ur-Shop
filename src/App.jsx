@@ -8,7 +8,6 @@ import scrollreveal from "scrollreveal";
 
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
-
 // get default theme or the theme saved in localstorage when found
 function defaultTheme() {
   const savedTheme = localStorage.getItem("theme");
@@ -71,11 +70,11 @@ function App() {
 
   return (
     <div data-theme={theme} className="app">
-      <ScrollToTop />
-      <Header changeTheme={changeTheme} currentTheme={theme} />
-      <Outlet />
-      <Newsletter />
-      <Footer />
+          <ScrollToTop />
+          <Header changeTheme={changeTheme} currentTheme={theme} /> 
+          <Outlet /> 
+          <Newsletter />
+          <Footer />
     </div>
   );
 }
