@@ -45,6 +45,8 @@ const ContactForm = () => {
           onChange={handleChange}
         />
         <textarea
+          type="text"
+          name="textArea"
           className="form-text-area"
           placeholder="your message"
           value={contactForm.textArea}

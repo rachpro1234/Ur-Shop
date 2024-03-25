@@ -291,7 +291,7 @@
 /*========== MEDIA-QUERIES (MOBILE) ==========*/
 @media screen and (max-width: 477px) {
     .contact .contact-banner {
-        height: 30vh;
+        height: 50vh;
     }
 
     .contact .contact-banner .banner-info h1 {

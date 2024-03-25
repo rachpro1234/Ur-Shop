@@ -90,6 +90,10 @@
 
 
 @media screen and (max-width: 477px) {
+    .about .about-banner {
+       height: 50vh;
+    }
+
     .about .about-us {
         display: flex;
         flex-direction: column;

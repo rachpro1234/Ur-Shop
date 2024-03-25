@@ -84,6 +84,10 @@
 
 /*======== MEDIA-QUERIES =======*/
 @media screen and (max-width: 477px) {
+    .blog .blog-banner {
+        height: 50vh;
+    }
+
     .blog .blog-content {
         display: flex;
         justify-content: flex-start;

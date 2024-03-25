@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.css";
-import GoogleMap from "./GoogleMap";
+// import GoogleMap from "./GoogleMap";
 import ContactForm from "./ContactForm";
 import { motion } from "framer-motion";
 // ICONS
@@ -14,11 +14,11 @@ import person1 from "../../img/people/1.png";
 import person2 from "../../img/people/2.png";
 import person3 from "../../img/people/3.png";
 
-const Location = {
-  address: "Konstantin - Furstenwalde/Spree",
-  lat: 52.360438,
-  lng: 14.059511,
-};
+// const Location = {
+//   address: "Konstantin - Furstenwalde/Spree",
+//   lat: 52.360438,
+//   lng: 14.059511,
+// };
 
 const Contact = () => {
   return (
@@ -66,9 +66,9 @@ const Contact = () => {
             </ul>
           </div>
         </div>
-        <div className="our-location">
+        {/* <div className="our-location">
           <GoogleMap location={Location} zoomLevel={11} />
-        </div>
+        </div> */}
       </div>
 
       <div className="contact-field">
