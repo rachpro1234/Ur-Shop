@@ -1,31 +1,31 @@
 
 // HOME PRODUCTS IMAGES
-import Pro1 from '../../img/products/n1.jpg'
-import Pro2 from '../../img/products/n2.jpg'
-import Pro3 from '../../img/products/n3.jpg'
-import Pro4 from '../../img/products/n4.jpg'
-import Pro5 from '../../img/products/n5.jpg'
-import Pro6 from '../../img/products/n6.jpg'
-import Pro7 from '../../img/products/n7.jpg'
-import Pro8 from '../../img/products/n8.jpg'
+import Pro1 from '../img/products/n1.jpg'
+import Pro2 from '../img/products/n2.jpg'
+import Pro3 from '../img/products/n3.jpg'
+import Pro4 from '../img/products/n4.jpg'
+import Pro5 from '../img/products/n5.jpg'
+import Pro6 from '../img/products/n6.jpg'
+import Pro7 from '../img/products/n7.jpg'
+import Pro8 from '../img/products/n8.jpg'
 
 // SHOP PRODUCTS IMAGES
-import P1 from '../../img/products/f1.jpg'
-import P2 from '../../img/products/f2.jpg'
-import P3 from '../../img/products/f3.jpg'
-import P4 from '../../img/products/f4.jpg'
-import P5 from '../../img/products/f5.jpg'
-import P6 from '../../img/products/f6.jpg'
-import P7 from '../../img/products/f7.jpg'
-import P8 from '../../img/products/f8.jpg'
+import P1 from '../img/products/f1.jpg'
+import P2 from '../img/products/f2.jpg'
+import P3 from '../img/products/f3.jpg'
+import P4 from '../img/products/f4.jpg'
+import P5 from '../img/products/f5.jpg'
+import P6 from '../img/products/f6.jpg'
+import P7 from '../img/products/f7.jpg'
+import P8 from '../img/products/f8.jpg'
 
 // BLOG PHOTOS
-import img1 from '../../img/blog/b1.jpg';
-import img2 from '../../img/blog/b2.jpg';
-import img3 from '../../img/blog/b3.jpg';
-import img4 from '../../img/blog/b4.jpg';
-import img5 from '../../img/blog/b5.jpg';
-import img6 from '../../img/blog/b6.jpg';
+import img1 from '../img/blog/b1.jpg';
+import img2 from '../img/blog/b2.jpg';
+import img3 from '../img/blog/b3.jpg';
+import img4 from '../img/blog/b4.jpg';
+import img5 from '../img/blog/b5.jpg';
+import img6 from '../img/blog/b6.jpg';
 
 
 const data = {

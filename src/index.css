@@ -148,7 +148,8 @@ button.white {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(./img/others/background.jpg);
+  /* background-image: url(./img/others/background.jpg); */
+  background-image: url(../src/components/img/others/background.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -432,7 +433,7 @@ button.white {
 }
 
 .second-banner .banner-box {
-  background: url(./img/others/img4.jpg) center / cover no-repeat;
+  background: url(../src/components/img/others/img4.jpg) center / cover no-repeat;
   height: 50vh;
   min-width: 47%;
   display: flex;
@@ -461,7 +462,7 @@ button.white {
 }
 
 .second-banner .banner-box:nth-child(2) {
-  background: url(./img/banner/b10.jpg) center / cover no-repeat;
+  background: url(../src/components/img/banner/b10.jpg) center / cover no-repeat;
 }
 
 .second-banner .banner-box:nth-child(2) h4 {
@@ -493,7 +494,7 @@ button.white {
 }
 
 .third-banner > .th-banner-box {
-  background: url(./img/others/img3.jpg) top / cover no-repeat;
+  background: url(../src/components/img/others/img3.jpg) top / cover no-repeat;
   height: 30vh;
   min-width: 30%;
   display: flex;
@@ -517,11 +518,11 @@ button.white {
 }
 
 .third-banner > .th-banner-box:nth-child(2) {
-  background: url(./img/others/img6.jpg) top / cover no-repeat;
+  background: url(../src/components/img/others/img6.jpg) top / cover no-repeat;
 }
 
 .third-banner > .th-banner-box:nth-child(3) {
-  background: url(./img/others/img5.jpg) top / cover no-repeat;
+  background: url(../src/components/img/others/img5.jpg) top / cover no-repeat;
 }
 
 /*========== MEDIA-QUERIES(Ipad) ===========*/

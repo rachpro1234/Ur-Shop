@@ -1,6 +1,6 @@
 import React from 'react'
 import "./newsletter.css"
-import newsletterCover from "../../img/banner/b1.jpg"
+import newsletterCover from "../img/banner/b1.jpg"
 
 const Newsletter = () => {
   return (

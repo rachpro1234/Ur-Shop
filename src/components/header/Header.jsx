@@ -4,8 +4,8 @@ import "./header.css";
 import { useCart } from "react-use-cart";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 // Header icons | imgs
-import lightLogo from "../../img/others/1.png"; // light-mode logo
-import darkLogo from "../../img/others/2.png"; // dark-mode logo
+import lightLogo from "../img/others/1.png"; // light-mode logo
+import darkLogo from "../img/others/2.png"; // dark-mode logo
 import { FiHome } from "react-icons/fi"; // home-section-icon
 import { LuShoppingBag } from "react-icons/lu"; // shop-section-icon
 import { SiBloglovin } from "react-icons/si"; // blog-section-icon
