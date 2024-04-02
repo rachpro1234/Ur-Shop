@@ -6,7 +6,7 @@
 }
 
 
-.scrolltop a {
+.scrolltop button {
     background-color: var(--primary-color);
     padding: 1rem;
     border-radius: 100%;
