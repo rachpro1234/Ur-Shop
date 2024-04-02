@@ -31,9 +31,9 @@ const ScrollToTop = () => {
 
   return (
     <div className="scrolltop">
-      <a href="#" className={`${visible ? "scroll-inline" : "scroll-none"}`}>
+      <button className={`${visible ? "scroll-inline" : "scroll-none"}`}>
         <FaChevronUp className="scroll-icon" onClick={bottomToTop} />
-      </a>
+      </button>
     </div>
   );
 };
