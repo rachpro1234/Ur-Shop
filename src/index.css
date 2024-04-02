@@ -148,7 +148,6 @@ button.white {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background-image: url(./img/others/background.jpg); */
   background-image: url(../src/components/img/others/background.jpg);
   background-position: top center;
   background-repeat: no-repeat;

@@ -69,13 +69,17 @@ function App() {
   }, []);
 
   return (
-    <div data-theme={theme} className="app">
+     <>
           <ScrollToTop />
+    <div data-theme={theme} className="app">
           <Header changeTheme={changeTheme} currentTheme={theme} /> 
           <Outlet /> 
           <Newsletter />
           <Footer />
     </div>
+    
+     
+     </>
   );
 }
 
