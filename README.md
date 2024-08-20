@@ -1,10 +1,10 @@
 # E-commerce Store made with React
 
 
+"C:\Users\90536\OneDrive\Pictures\Screenshots\ur-shop(L-screen).png"
 
 
 
-![Uploading ur-shop(L-screen).png…]()
 
 
 
