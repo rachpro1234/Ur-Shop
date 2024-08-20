@@ -1,5 +1,18 @@
 # E-commerce Store made with React
 
+
+
+
+
+![Uploading ur-shop(L-screen).png…]()
+
+
+
+
+
+
+
+
 ==> The Photos used in the HOME, SIGNUP, LOGIN pages are from;
 
 - ursplash 
