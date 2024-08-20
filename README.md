@@ -1,16 +1,9 @@
 # E-commerce Store made with React
 
-
-"C:\Users\90536\OneDrive\Pictures\Screenshots\ur-shop(L-screen).png"
-
+![ur-shop(L-screen)](https://github.com/user-attachments/assets/dd2878a4-61f8-4e2a-a91f-fa056b2dd598)
 
 
-
-
-
-
-
-
+![ur-shop(mobile)](https://github.com/user-attachments/assets/861789c4-9073-4ed3-b463-ffb0eb8ab1a5)
 
 
 ==> The Photos used in the HOME, SIGNUP, LOGIN pages are from;
