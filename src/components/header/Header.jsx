@@ -135,7 +135,7 @@ const Header = ({ changeTheme, currentTheme }) => {
 
       <div className="mobile">
         <NavLink to="/cart" onClick={linkActiveHandle} className="mobile-bag">
-          <p className="total-items">{totalItems}</p>
+          {totalItems === 0 ? "" : <p className="total-items">{totalItems}</p>} 
           <FaShoppingBag />
         </NavLink>
         <span>
